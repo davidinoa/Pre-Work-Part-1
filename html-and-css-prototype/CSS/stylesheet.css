@@ -1,27 +1,27 @@
 /* Global resets */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
+  font-family: 'rooney-sans', Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
 }
 
 /* Fonts */
 h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+  font-family: 'rooney-web', 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
 }
 
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
@@ -40,3 +40,130 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+.wrapper {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.tooltip {
+  background-color: #424242;
+  border-radius: 2.5px;
+  color: #fff;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem;
+  position: relative;
+}
+
+.tooltip:after {
+  background-color: #424242;
+  content: '';
+  height: 10px;
+  left: 85%;
+  margin-top: -7px;
+  position: absolute;
+  top: 100%;
+  transform: rotate(45deg);
+  width: 10px;
+}
+
+.donation__bar {
+  background-color: #fafafa;
+  border: 1.2px solid #eaeaea;
+  display: flex;
+  height: 12.5px;
+}
+
+.donation__bar-elapsed {
+  background-color: #ef5f3c;
+  width: 75%;
+}
+
+.donation__box {
+  border: 1.2px solid #eaeaea;
+  border-top: none;
+  margin-bottom: 0.7rem;
+  padding: 1rem;
+  text-align: initial;
+}
+
+.donation__text {
+  color: #777;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+}
+
+.donation__days-left {
+  color: #ef5f3c;
+  font-weight: 600;
+}
+
+.donation__form {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.donation__input-placeholder {
+  margin-right: 1rem;
+  position: relative;
+  width: 45%;
+}
+
+.donation__input-placeholder:before {
+  color: #777;
+  content: '$';
+  font-size: 0.9rem;
+  font-weight: 600;
+  left: 10%;
+  position: absolute;
+  top: 29%;
+  z-index: 1;
+}
+
+.donation__input {
+  border: 1px solid #eaeaea;
+  border-radius: 2.5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: 100%;
+  margin-right: 1rem;
+  padding-left: 1.2rem;
+  position: relative;
+  width: 100%;
+}
+
+.donation__input::placeholder {
+  color: #424242;
+}
+
+.donation__button {
+  background-color: #1cbc2c;
+  border: none;
+  border-radius: 2.5px;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.25rem;
+}
+
+.donation__why-give {
+  color: #20a1d4;
+  font-size: 0.7rem;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options__button {
+  width: 47%;
+  background-color: #fafafa;
+  border-radius: 2.5px;
+  color: #777;
+  font-weight: 600;
+  padding: 0.6rem 0.7rem;
+}
